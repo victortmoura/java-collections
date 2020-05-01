@@ -45,6 +45,11 @@ public class TestaAlunosEmCurso {
 		System.out.println("O aluno a4 equals Joao Lima ?");
 		System.out.println(a3.equals(a4));
 		
+		System.out.println("------------------------------------------");
+		System.out.println();
+		
+		Aluno buscaMatriculado = javaColecoes.buscaMatriculado(65455);
+		System.out.println("Aluno ".concat(buscaMatriculado != null ? buscaMatriculado.getNome() + " encontrado" : "não encontrado"));
 		
 	}
 }
