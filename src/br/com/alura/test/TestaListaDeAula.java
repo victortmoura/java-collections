@@ -1,9 +1,11 @@
-package br.com.alura;
+package br.com.alura.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import br.com.alura.Aula;
 
 public class TestaListaDeAula {
 

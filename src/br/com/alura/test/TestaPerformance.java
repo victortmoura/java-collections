@@ -1,0 +1,35 @@
+package br.com.alura.test;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+
+public class TestaPerformance {
+
+	public static void main(String[] args) {
+//		Velocidade de busca das listas e conjuntos
+		
+//		Insercao rapida com busca lenta e com elementos repetidos
+		Collection<Integer> numeros = new ArrayList<Integer>();
+
+//		Insercao rapida com busca rapida e sem elementos repetidos
+//		Collection<Integer> numeros = new HashSet<Integer>();
+		
+		long inicio = System.currentTimeMillis();
+		
+		for(int i = 0; i <= 50000; i++) {
+			numeros.add(i);
+		}
+		
+		for (Integer numero : numeros) {
+			numeros.contains(numero);
+		}
+		
+		long fim = System.currentTimeMillis();
+		
+		long tempoDeExecucao = fim - inicio;
+		
+		System.out.println("tempo gasto: " + tempoDeExecucao);
+		
+	}
+}
